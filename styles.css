@@ -964,7 +964,7 @@ nav a.is-current { color: var(--ink); }
 .cta-form-side p { font-size: 15.5px; line-height: 1.7; color: rgba(245, 242, 235, 0.78); margin-bottom: 36px; max-width: 440px; }
 .cta-form-side .actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
-/* ───────── CONTACT FORM (página contacto) ───────── */
+/* ───────── CONTACTO (página contacto) ───────── */
 .contact-page { padding: 90px 0 110px; }
 .contact-grid {
   display: grid;
@@ -991,55 +991,39 @@ nav a.is-current { color: var(--ink); }
 .contact-info .item .v a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule-strong); transition: all 0.3s; }
 .contact-info .item .v a:hover { color: var(--burgundy); border-color: var(--gold); }
 
-.form-wrap {
+.email-panel {
   background: var(--paper);
   border: 1px solid var(--rule);
   padding: 50px;
 }
-.form-wrap h2 {
+.email-panel h2 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 1.15;
   margin-bottom: 12px;
 }
-.form-wrap h2 .accent { font-style: italic; color: var(--burgundy); }
-.form-wrap .form-intro {
+.email-panel h2 .accent { font-style: italic; color: var(--burgundy); }
+.email-panel .email-intro {
   font-size: 14.5px; line-height: 1.65;
-  color: var(--ink-soft); margin-bottom: 36px;
+  color: var(--ink-soft); margin-bottom: 18px;
 }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-bottom: 22px; }
-.form-row.full { grid-template-columns: 1fr; }
-.field label {
-  display: block;
-  font-size: 10.5px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--ink-mute);
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-.field input,
-.field select,
-.field textarea {
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid var(--rule-strong);
-  padding: 8px 0 12px;
+.email-link {
+  display: inline-block;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 19px;
+  font-size: 28px;
+  line-height: 1.25;
   color: var(--ink);
-  outline: none;
-  transition: border-color 0.3s;
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 3px;
+  margin-bottom: 26px;
+  word-break: break-word;
+  transition: all 0.3s;
 }
-.field input:focus,
-.field select:focus,
-.field textarea:focus { border-color: var(--gold); }
-.field textarea { min-height: 120px; resize: vertical; line-height: 1.5; font-family: 'Inter', sans-serif; font-size: 15px; padding-top: 12px; }
-.field select { background: transparent; cursor: pointer; }
-.form-actions { margin-top: 14px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
-.form-note { font-size: 12px; color: var(--ink-mute); line-height: 1.55; max-width: 360px; }
+.email-link:hover { color: var(--burgundy); border-color: var(--burgundy); }
+.email-note { font-size: 14.5px; color: var(--ink-soft); line-height: 1.65; max-width: 460px; margin-bottom: 32px; }
+.email-panel .actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
 /* ───────── FOOTER ───────── */
 footer.site-footer { background: #14171F; color: rgba(245, 242, 235, 0.6); padding: 80px 0 32px; font-size: 13px; }
@@ -1180,8 +1164,7 @@ footer.site-footer { background: #14171F; color: rgba(245, 242, 235, 0.6); paddi
   .testimonial blockquote { font-size: 22px; }
   .announce { font-size: 11px; }
   .announce strong { display: block; margin-bottom: 4px; }
-  .form-wrap { padding: 32px 24px; }
-  .form-row { grid-template-columns: 1fr; gap: 18px; }
+  .email-panel { padding: 32px 24px; }
   .article-body p { font-size: 18px; }
   .article-body blockquote.pull { font-size: 22px; padding: 32px 18px; }
   .blog-issue-inner { gap: 16px; }
