@@ -756,14 +756,18 @@ nav a.is-current { color: var(--ink); }
   padding: 70px 0 100px;
 }
 .article-figure {
-  margin: 0 -80px 56px;
+  aspect-ratio: 16 / 9;
+  margin: 0 0 48px;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  box-shadow: 0 18px 46px rgba(26, 31, 43, 0.12);
 }
 .article-figure img {
   display: block;
   width: 100%;
-  height: auto;
-  border: 1px solid var(--rule);
-  box-shadow: 0 24px 70px rgba(26, 31, 43, 0.16);
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .article-body p {
   font-family: 'Cormorant Garamond', serif;
@@ -1100,7 +1104,6 @@ footer.site-footer { background: #14171F; color: rgba(245, 242, 235, 0.6); paddi
   .valor { border-right: none; border-bottom: 1px solid var(--rule); }
   .valor:last-child { border-bottom: none; }
   .contact-grid { grid-template-columns: 1fr; gap: 50px; }
-  .article-figure { margin: 0 0 48px; }
   .article-body blockquote.pull { margin: 40px 0; padding: 40px 24px; }
 }
 /* ───────── MOBILE NAV (tablet incluido) ───────── */
